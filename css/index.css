@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  /* text-decoration: none; */
+}
+
+.offer-top {
+  background: #000000;
+  padding: 6px 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+
+a, a:hover,a:focus{
+    text-decoration:none;
+    outline:none;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
+}
+
+.header_logo{
+    padding: 27px 0;
+    text-align: center;
+}
+
+.header_logo a{
+     display: inline-block;
+     color: rgb(0, 0, 0);
+     font-size: 17px;
+     text-transform: uppercase;
+     font-weight: 700;
+     letter-spacing: 2px;
+}
+
+.header_logo a span{
+    color: #ff7200;
+    font-size: 27px;
+    font-weight: 750;
+}
+
+.header_menu{
+    padding: 30px 0px 27px;
+    text-align: center;
+}
+
+.header_menu ul li{
+    position: sticky;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.header_menu ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 500;
+    display: block;
+    padding: 3px 0;
+    position: sticky;
+}
+
+
+
+.snip1217 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: -1px;
+    padding-top: 5px;
+  }
+  .snip1217 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1217 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 1px;
+    padding: 0px;
+  }
+  .snip1217 a {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .snip1217 a:before,
+  .snip1217 a:after {
+    height: 3px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: #ff7200;
+    width: 0;
+  }
+  .snip1217 a:before {
+    top: 0;
+    left: 0;
+  }
+  .snip1217 a:after {
+    bottom: 0;
+    right: 0;
+  }
+  .snip1217 a:hover,
+  .snip1217 .current a {
+    color: #000000;
+  }
+  .snip1217 a:hover:before,
+  .snip1217 .current a:before,
+  .snip1217 a:hover:after,
+  .snip1217 .current a:after {
+    width: 100%;
+  }
+
+.header_right{
+    text-align: center;
+    padding: 30px 0 27px;
+}
+
+.header_right .header_right_auth{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.header_right .header_right_auth a{
+    font-size: 17px;
+    color: #000000;
+    position: sticky;
+    margin-right: 13px;
+}
+
+
+
+/* product */
+
+
+
+
+
+
+
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+  display: flex; 
+}
+
+.row_rate{
+  list-style-type: none;
+  margin-left:37%;
+padding:0;
+}
+
+.rating{
+  margin-left:37%;
+}
+
+.page{
+  background-color: #ffffff;
+padding:2%;
+margin: auto;
+}
+
+.fa{
+  color:#f2dd1d;
+}
+
+.card-img-top{
+width:90%;
+height:225px;
+}
+
+.view{
+  background-color:#ffffff;
+  padding:10px;
+  margin:20px;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 6000px;
+  height: auto;
+}
+
+.card-footer{
+  background-color: #ff772e;
+  font-weight: 700;
+}
+
+.price{
+color:#ff4517;
+  font-weight: 600;
+
+}
+
+.card-img-top{
+  transition: transform .60s;
+}
+
+.card-img-top:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+
+
+
+/* Sidebar */
+
+
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 257px;
+  background-color: #ffffff6a;
+  position:sticky;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #ff7200;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a top bar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+.footer-clean {
+  padding:50px 0;
+  background-color:#fff;
+  color:#4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
+
+
